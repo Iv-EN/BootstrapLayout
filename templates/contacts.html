@@ -12,7 +12,7 @@
 <div class="row" style="height: calc(100vh)">
     <div class="col-2 text-bg-dark bg-dark">
         <a href="/" class="d-flex align-items-center m-3 text-white text-decoration-none">
-            <img src="https://github.com/Iv-EN/BootstrapLayout/blob/develop/static/media/bootstrap.png" alt="иконка" width="32" height="32">
+            <img src="/static/media/bootstrap.png" alt="иконка" width="32" height="32">
             <span class="fs-4">Меню</span>
         </a>
         <hr>
@@ -67,24 +67,26 @@
                 <div class="row text-start">
                         <div class="card mb-4 box-shadow">
                             <div class="card-body">
-                                <div class="mb-3">
-                                    <label>Имя</label>
-                                    <input class="form-control">
-                                    <label>Почта</label>
-                                    <div class="input-group has-validation">
-                                        <span class="input-group-text">@</span>
-                                        <input class="form-control">
+                                <form method="post" action="" class="form-floating">
+                                    <div class="mb-3">
+                                        <label>Имя</label>
+                                        <input type="text" class="form-control" aria-label="name" name="name">
+                                        <label>Почта</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text">@</span>
+                                            <input type="email" class="form-control" aria-label="email" name="email">
+                                        </div>
+                                        <label>Сообщение</label>
+                                        <textarea class="form-control" aria-label="With textarea" name="text"></textarea>
+                                        <button type="submit" class="btn btn-lg btn-block btn-outline-primary mt-3">Отправить</button>
                                     </div>
-                                    <label>Сообщение</label>
-                                    <textarea class="form-control"></textarea>
-                                    <button type="submit" class="btn btn-lg btn-block btn-outline-primary mt-3">Отправить</button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                 </div>
             </div>
             <div class="col-1"></div>
-            <div class="col-5">
+            <div class="col-4">
                 <h4>Наши контакты</h4>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <p>Вот так как-то</p>
